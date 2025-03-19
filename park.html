@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tanzania's 3 Best National Parks</title>
+  <link rel="stylesheet" href="park.css">
+</head>
+<body>
+  <header>
+    <h1>Tanzania's 3 Best National Parks</h1>
+    <nav>
+      <ul>
+        <li><a href="#serengeti">Serengeti</a></li>
+        <li><a href="#ngorongoro">Ngorongoro Crater</a></li>
+        <li><a href="#tarangire">Tarangire</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Serengeti National Park Section -->
+    <section id="serengeti">
+      <h2>Serengeti National Park</h2>
+      <div class="content">
+        <img src="Serenget.jpg" alt="Serengeti National Park">
+        <div class="description">
+          <p>
+            Serengeti National Park is renowned for its vibrant wildlife and the annual Great Migration,
+            where millions of wildebeest, zebras, and other animals traverse the plains.
+          </p>
+          <button class="read-more" data-target="serengeti-more">Read More</button>
+          <div class="more-text" id="serengeti-more">
+            <p>
+              Spanning over 14,750 square kilometers, Serengeti offers endless safari adventures for nature enthusiasts and photographers.
+              Its vast open landscapes and dynamic ecosystem make it one of Tanzania’s crown jewels.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ngorongoro Crater Section -->
+    <section id="ngorongoro">
+      <h2>Ngorongoro Crater</h2>
+      <div class="content">
+        <img src="Ngorongoro.jpg" alt="Ngorongoro Crater">
+        <div class="description">
+          <p>
+            Ngorongoro Crater is a UNESCO World Heritage Site that features one of the world’s largest intact calderas.
+          </p>
+          <button class="read-more" data-target="ngorongoro-more">Read More</button>
+          <div class="more-text" id="ngorongoro-more">
+            <p>
+              Formed by a massive volcanic eruption, this natural wonder is home to diverse wildlife including elephants, lions, and rhinos.
+              The crater’s unique history and ecosystem make it an unforgettable destination.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tarangire National Park Section -->
+    <section id="tarangire">
+      <h2>Tarangire National Park</h2>
+      <div class="content">
+        <img src="Tarangire-.png.webp" alt="Tarangire National Park">
+        <div class="description">
+          <p>
+            Tarangire National Park is celebrated for its impressive elephant herds, ancient baobab trees, and scenic landscapes.
+          </p>
+          <button class="read-more" data-target="tarangire-more">Read More</button>
+          <div class="more-text" id="tarangire-more">
+            <p>
+              With a quieter charm than its more famous counterparts, Tarangire offers a peaceful safari experience where visitors can truly connect with nature.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <button type="submit">Send Message</button>
+      </form>
+      <div id="formResponse"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Tanzania National Parks. All rights reserved.</p>
+  </footer>
+
+  <script src="park.js"></script>
+</body>
+</html>
